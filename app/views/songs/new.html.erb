@@ -1,0 +1,20 @@
+<%= form_with url: artists_songs_path do |form| %>
+  <%= form.label :name %>
+  <br>
+  <%= form.text_field :name %>
+  <br>
+  <%= form.label :album %>
+  <br>
+  <%= form.text_field :album%>
+  <br>
+  <%= form.label :release_date %>
+  <br>
+  <%= form.text_field :release_date %>
+  <br>
+  <%= form.label 'Genre:' %>
+  <br>
+  <%= form.collection_select :genre_id, @genres, :id, :name %>
+  <br>
+  <%= form.submit %>
+  <% end %>
+  

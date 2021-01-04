@@ -1,0 +1,42 @@
+# This file should contain all the record creation needed to seed the database with its default values.
+# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
+#
+# Examples:
+#
+#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
+#   Character.create(name: 'Luke', movie: movies.first)
+artist1 = Artist.create(name: "Tame Impala", instrument: "bass", years_active: 12)
+artist2 = Artist.create(name: "Beach House", instrument: "keyboard", years_active: 10)
+artist3 = Artist.create(name: "War on Drugs", instrument: "guitar", years_active: 22)
+artist4 = Artist.create(name: "St Vincent", instrument: "guitar", years_active: 14)
+artist5 = Artist.create(name: "Talking Heads", instrument: "bass", years_active: 40)
+artist6 = Artist.create(name: "Khruangbin", instrument: "drums", years_active: 6)
+artist7 = Artist.create(name: "Phoebe Bridgers", instrument: "guitar", years_active: 8)
+
+genre1 = Genre.create(name: "Alternative")
+genre2 = Genre.create(name: "Indie")
+genre3 = Genre.create(name: "Psychedelia")
+genre4 = Genre.create(name: "Funk")
+genre5 = Genre.create(name: "Folk-rock")
+
+song1 = Song.create(name: "Como Te Quiero", album: "Con Todo El Mundo", release_date: 2018, artist_id: 6, genre_id: 4)
+song2 = Song.create(name: "Maria Tambien", album: "Con Todo El Mundo", release_date: 2018, artist_id: 6, genre_id: 4)
+song3 = Song.create(name: "Lady and Man", album: "Con Todo El Mundo", release_date: 2018, artist_id: 6, genre_id: 4)
+song4 = Song.create(name: "Burning Down the House", album: "Speaking in Tongues", release_date: 1983, artist_id: 5, genre_id: 2)
+song5 = Song.create(name: "Girlfriend is Better", album: "Speaking in Tongues", release_date: 1983, artist_id: 5, genre_id: 2)
+song6 = Song.create(name: "Swamp", album: "Speaking in Tongues", release_date: 1983, artist_id: 5, genre_id: 2)
+song7 = Song.create(name: "Kyoto", album: "Punisher", release_date: 2020, artist_id: 7, genre_id: 5)
+song8 = Song.create(name: "Halloween", album: "Punisher", release_date: 2020, artist_id: 7, genre_id: 5)
+song9 = Song.create(name: "Chinese Satellite", album: "Punisher", release_date: 2020, artist_id: 7, genre_id: 5)
+song10 = Song.create(name: "Space Song", album: "Depression Cherry", release_date: 2015, artist_id: 2, genre_id: 3)
+song11 = Song.create(name: "Beyond Love", album: "Depression Cherry", release_date: 2015, artist_id: 2, genre_id: 3)
+song12 = Song.create(name: "Levitation", album: "Depression Cherry", release_date: 2015, artist_id: 2, genre_id: 3)
+song13 = Song.create(name: "Red Eyes", album: "Lost in the Dream", release_date: 2014, artist_id: 3, genre_id: 1)
+song14 = Song.create(name: "Under Preasure", album: "Lost in the Dream", release_date: 2014, artist_id: 3, genre_id: 1)
+song15 = Song.create(name: "Suffering", album: "Lost in the Dream", release_date: 2014, artist_id: 3, genre_id: 1)
+song16 = Song.create(name: "The Less I Know the Better", album: "Currents", release_date: 2015, artist_id: 1, genre_id: 1)
+song17 = Song.create(name: "Let it Happen", album: "Currents", release_date: 2015, artist_id: 1, genre_id: 1)
+song18 = Song.create(name: "The Moment", album: "Currents", release_date: 2015, artist_id: 1, genre_id: 1)
+song19 = Song.create(name: "Digital Witness", album: "St Vincent", release_date: 2014, artist_id: 4, genre_id: 2)
+song20 = Song.create(name: "Birth in Reverse", album: "St Vincent", release_date: 2014, artist_id: 4, genre_id: 2)
+song21 = Song.create(name: "Prince Johnny", album: "St Vincent", release_date: 2014, artist_id: 4, genre_id: 2)

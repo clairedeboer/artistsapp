@@ -1,0 +1,17 @@
+<% if flash[:error] %>
+	<%= flash[:error] %>
+  <% end %>
+
+<%= form_with url: sessions_path do |form| %>
+  <%= form.label :name %>
+  <br>
+  <%= form.text_field :name %>
+  <br>
+  <%= form.label :password%>
+  <br>
+  <%= form.password_field :password %>
+  <br>
+  <%= form.submit 'Login'%>
+  <% end %>
+  <br>
+  <%= button_to 'Sign Up', new_artist_path, method: :get%>

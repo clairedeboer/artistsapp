@@ -1,0 +1,25 @@
+<% if flash[:errors] %>
+  <% flash[:errors].each do |error| %>
+    <%= error %>
+  <% end %>
+<% end %>
+
+<%= form_with model: @artist do |form| %>
+  <%= form.label :name %>
+  <br>
+  <%= form.text_field :name %>
+  <br>
+  <%= form.label :instrument %>
+  <br>
+  <%= form.text_field :instrument %>
+  <br>
+  <%= form.label :years_active %>
+  <br>
+  <%= form.text_field :years_active %>
+  <br>
+  <%= form.label :password%>
+  <br>
+  <%= form.password_field :password %>
+  <br>
+  <%= form.submit 'Register'%>
+  <% end %>
